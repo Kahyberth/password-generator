@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+
+    <br />
+    <hr />
+    <!-- title -->
+    <header class="titles">PASSWORD GENERATOR</header>
+    <hr />
+    <br />
+
+    <div class="container">
+
+        <div class="container">
+
+            <label class="checkbox-btn">
+                <label for="checkbox"></label>
+                <input class ="mayusMin" id="letter" type="checkbox">
+                <span class="checkmark"></span>
+            <span class="theme">Mayus/minus</span></label>
+
+            <label class="checkbox-btn">
+                <label for="checkbox"></label>
+                <input class ="mayusMin" id="number" type="checkbox">
+                <span class="checkmark"></span>
+            <span class="theme">Numbers</span></label>
+
+            <label class="checkbox-btn">
+                <label for="checkbox"></label>
+                <input class ="mayusMin" id="symbol" type="checkbox">
+                <span class="checkmark"></span>
+            <span class="theme">Symbols</span></label>
+
+        </div>
+
+        <div class="outputPassword">
+            <div>
+                <input type="text" class='styleTextField' id="password" minlength="8" maxlength="16" disabled size="40" placeholder="PASSWORD"/>
+            </div>
+
+            <div>
+                <input type="text" class='styleTextField1' id="passwordLength" minlength="8" maxlength="16" size="10" placeholder="Enter length" />
+            </div>
+
+        </div>
+
+        <div class="buttonGenerate">
+            <button id="generate">
+                <span>GENERATE</span>
+            </button>
+        </div>
+
+    </div>
+
+    <script src="/assets/js/generator.js"></script>
+</body>
+
+</html>
